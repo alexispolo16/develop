@@ -1,0 +1,41 @@
+// Tada
+@include keyframes(tada) {
+	0% {
+		@include transform(scale3d(1, 1, 1));
+	}
+
+	10%, 20% {
+		@include transform(scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg));
+	}
+
+	30%, 50%, 70%, 90% {
+		@include transform(scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg));
+	}
+
+	40%, 60%, 80% {
+		@include transform(scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg));
+	}
+
+	100% {
+		@include transform(scale3d(1, 1, 1));
+	}
+
+}
+
+%tada {
+	@include animation(tada 1s linear);
+}
+
+// Hue Rotator
+@include keyframes(hue-rotator) {
+	0%   {
+		@include filter(hue-rotate(0deg));
+	}
+	100% {
+		@include filter(hue-rotate(-100deg));
+	}
+}
+
+%hue-rotator {
+	@include animation(hue-rotator 1.5s infinite alternate);
+}

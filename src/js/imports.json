@@ -1,0 +1,7 @@
+[
+	{"name": "$","path": "modules/jQuery",  "load": ""},
+	{"name": "Templates","path": "modules/Templates",  "load": "before"},
+	{"name": "Utils","path": "modules/Utils",  "load": "before"},
+	{"name": "Pixels","path": "modules/Particles",  "load": ""},
+	{"name": "Particles","path": "modules/Particles",  "load": "before"}
+]

@@ -1,0 +1,91 @@
+
+// Breakpoint mixin
+@mixin breakpoint($point) {
+
+	@if $point == mobile {
+		@media ( min-width: $mobile ) { @content; }
+	}
+	@if $point == mobile_w {
+		@media ( min-width: $mobile_w ) { @content; }
+	}
+	@if $point == tablet {
+		@media ( min-width: $tablet ) { @content; }
+	}
+	@if $point == tablet_w {
+		@media ( min-width: $tablet_w ) { @content; }
+	}
+	@if $point == desktop {
+		@media ( min-width: $desktop ) { @content; }
+	}
+	@if $point == desktop_w {
+		@media ( min-width: $desktop_w ) { @content; }
+	}
+
+}
+
+// Alignment mixin
+@mixin align($pos, $abs:false){
+
+	@if $pos == vert {
+
+		@if $abs == true {
+			top: 50%;
+			@include transform(translate(0,-50%));
+		}
+		@else {
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+	@else if $pos == horz{
+
+		@if $abs == true {
+			left: 50%;
+			@include transform(translate(-50%,0));
+		}
+		@else {
+			margin: 0 auto;
+		}
+
+	}
+	@else if $pos == both {
+
+		@if $abs == true {
+			top: 50%;
+			left: 50%;
+			@include transform(translate(-50%,-50%));
+		}
+		@else {
+			display: inline-block;
+			vertical-align: middle;
+			margin: 0 auto;
+		}
+
+	}
+
+}
+
+// Clearfix
+%clearfix {
+	zoom: 1;
+	&:before, &:after {
+		content: "\0020";
+		display: block;
+		height: 0;
+		overflow: hidden;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+// Hardware acceleration
+%accelerated {
+	backface-visibility: hidden;
+	perspective: 1000;
+}
+
+// Cursor
+%link{
+	cursor: pointer;
+}

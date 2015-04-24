@@ -1,0 +1,23 @@
+html, body {
+	min-width: 320px;
+}
+
+body {
+	position: relative;
+	background-color: lightgray;
+	margin: 0;
+	font-kerning: normal;
+	font-family: Helvetica;
+	-webkit-font-smoothing: antialiased;
+	z-index: 320;
+	@include breakpoint(mobile_w) { z-index: 480; }
+	@include breakpoint(tablet) { z-index: 640; }
+	@include breakpoint(tablet_w) { z-index: 768; }
+	@include breakpoint(desktop) { z-index: 980; }
+	@include breakpoint(desktop_w) { z-index: 1280; }
+
+}
+
+.btn{
+	@extend %link;
+}

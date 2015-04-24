@@ -1,0 +1,40 @@
+@import "icons";
+
+@font-face {
+    font-family: 'bebas';
+    src: url('/assets/fonts/bebasneuebook-webfont.eot');
+    src: url('/assets/fonts/bebasneuebook-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/bebasneuebook-webfont.woff2') format('woff2'),
+         url('/assets/fonts/bebasneuebook-webfont.woff') format('woff'),
+         url('/assets/fonts/bebasneuebook-webfont.ttf') format('truetype'),
+         url('/assets/fonts/bebasneuebook-webfont.svg#bebas_neuebook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'limerick';
+    src: url('/assets/fonts/limerick-medium-webfont.eot');
+    src: url('/assets/fonts/limerick-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/limerick-medium-webfont.woff2') format('woff2'),
+         url('/assets/fonts/limerick-medium-webfont.woff') format('woff'),
+         url('/assets/fonts/limerick-medium-webfont.ttf') format('truetype'),
+         url('/assets/fonts/limerick-medium-webfont.svg#limerick-mediumregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'limerick-xlight';
+    src: url('/assets/fonts/limerick-xlight-webfont.eot');
+    src: url('/assets/fonts/limerick-xlight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/limerick-xlight-webfont.woff2') format('woff2'),
+         url('/assets/fonts/limerick-xlight-webfont.woff') format('woff'),
+         url('/assets/fonts/limerick-xlight-webfont.ttf') format('truetype'),
+         url('/assets/fonts/limerick-xlight-webfont.svg#limerick-xlightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
